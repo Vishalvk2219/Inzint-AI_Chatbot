@@ -17,7 +17,7 @@ const App = () => {
   const sidebarRef = useRef(null);
   const isInitialMount = useRef(true);
 
-  const API_BASE_URL = 'http://localhost:8000';
+  const API_BASE_URL = process.env.BACKENDRENDER;
   const MAX_PDFS = 3;
 
   useEffect(() => {
